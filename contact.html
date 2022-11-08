@@ -3,6 +3,7 @@
     <head>
         <title>Technovert Mockup</title>
         <link rel="stylesheet" href="contact.css"> 
+        <script src="contact.js" defer></script>
     </head>
     <body>
         <div class="heading">
@@ -22,26 +23,29 @@
             <div class="icon"><img src="blog-icon.png" alt="icon not found"></div>
         </div>
         <div class="body">
-            <script src="contact.js"></script>
-            <form>
+            <div id="update"></div>
+            <form id="details">
                 <p><label for="name">My Name:</label>
-                    <input type="text" name="name" aria-describedby="required-description">
-                    <span aria-hidden="true" class="required">*</span>
+                    <input type="text" id="name" name="name" aria-describedby="required-description">
+                    <span aria-hidden="true" class="required">*</span>&nbsp;
+                    <span id="nameError"></span>
                 </p><br>
                 <p><label for="gender">Gender:</label>
                     <input type="radio" name="gender"  value="Sir" onclick="genderAlert(this.value)">Male
                     <input type="radio" name="gender"  value="Lady" onclick="genderAlert(this.value)">Female
                 </p><br>
                 <p><label for="email">My Email Address:</label>
-                    <input type="email" name="email" aria-describedby="required-description">
-                    <span aria-hidden="true" class="required">*</span>
+                    <input type="email" id="email" name="email" aria-describedby="required-description">
+                    <span aria-hidden="true" class="required">*</span>&nbsp;
+                    <span id="emailError"></span>
                 </p><br>
                 <p><label for="phnno">My Telephone Number:</label>
                     <input type="text" name="phnno">
                 </p><br>
                 <p><label for="orgname">My Organization Name:</label>
-                    <input type="text" name="orgname" aria-describedby="required-description">
-                    <span aria-hidden="true" class="required">*</span>
+                    <input type="text" id="orgName" name="orgname" aria-describedby="required-description">
+                    <span aria-hidden="true" class="required">*</span>&nbsp;
+                    <span id="orgNameError"></span>
                 </p><br>
                 <p><label for="city">My City:</label>
                     <input type="text" name="city">
@@ -75,8 +79,8 @@
                 <p><label for="know">What I'd really like to know is:</label></p>
                 <p><textarea class="scroll-box" name="know" ></textarea></p><br>
                 <p>
-                    <button class="send-button" type="submit">Send Message</button>&nbsp;
-                    <button class="clear-button" onclick= "clearForm();">Clear Form</button>
+                    <button class="send-button" id="submit" type="submit">Send Message</button>&nbsp;
+                    <button id="clear" class="clear-button">Clear Form</button>
                 </p><br>
             </form>
         </div>
