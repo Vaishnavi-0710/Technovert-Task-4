@@ -1,0 +1,98 @@
+body{
+    margin:0;
+    width:100%;
+}
+.heading{
+    background-color: #3399cc;
+    padding:1px;
+}
+.main-heading{
+    font-family: "Century Gothic";
+    font-size: 45px;
+    color:white;
+    font-weight: 100;
+    margin-left: 30px;
+}
+#navItem {
+    font-family:Calibri;
+    list-style-type: none;
+    display:flex;
+    text-align: center;
+    margin: 0;
+    padding-left: 10px;
+    padding-top: 0;
+    padding-bottom: 0;
+    overflow: hidden;
+    background-color: #333333;
+}
+#navItem li {
+    margin-left: 15px;
+}
+.icon{
+    align-items: center;
+    margin-left: auto;
+    padding: 5px;
+    padding-right: 40px;
+    width:25px;
+    height:25px;
+}
+#navItem li b {
+    display: flex;
+    align-items: center;
+    color: white;
+    text-align: center;
+    padding: 8px;
+    text-decoration: none;
+}
+.body{
+    padding-left: 55px;
+    padding-top: 30px;
+}
+.news{
+    border-style: solid;
+    border-width: 1px;
+    border-color: #C0C0C0;
+    width: 710px;
+    padding: 10px;
+}
+.sub-header{
+    font-family: 'calibri';
+    font-size: 150%;
+    font-weight: 500;
+    margin: 0;
+}
+.news-headlines{
+    font-family: 'Calibri';
+    font-size: 96%;
+    font-weight: 500;
+    color: #333333;
+    list-style-type: none;
+    padding:0;
+    margin:0;
+    text-shadow: 0.3px 0.5px grey;
+}
+.news-headlines > li{
+    margin-bottom: 15px;
+}
+.news-headlines > li::before{
+    content: "-";
+    margin-left: 6px;
+    margin-right: 10px;
+}
+.welcome{
+    margin-top: 33px;
+    width:1040px;
+}
+/* .para1, .para2{
+    width: 1020px;
+}
+.para3{
+    width: 1040px;
+} */
+.welcome > div{
+    font-family: 'Calibri';
+    color: #333333;
+    font-size: 96%;
+    margin-top: 4px;
+    text-shadow: 0.3px 0.5px grey;
+}
