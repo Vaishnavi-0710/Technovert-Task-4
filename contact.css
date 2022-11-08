@@ -83,11 +83,14 @@ label{
     font-size: 15px;
     width:200px;
 }
-input{
+input,button{
     display: table-cell;
     padding: 5px;
     border-color:#9F9F9F;
     border-style: inset;
+}
+.required{
+    color: red;
 }
 select{
     padding: 5px;

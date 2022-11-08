@@ -22,29 +22,33 @@
             <div class="icon"><img src="blog-icon.png" alt="icon not found"></div>
         </div>
         <div class="body">
+            <script src="contact.js"></script>
             <form>
                 <p><label for="name">My Name:</label>
-                    <input type="text" name="name">
+                    <input type="text" name="name" aria-describedby="required-description">
+                    <span aria-hidden="true" class="required">*</span>
                 </p><br>
                 <p><label for="gender">Gender:</label>
                     <input type="radio" name="gender">Male
                     <input type="radio" name="gender">Female
                 </p><br>
                 <p><label for="email">My Email Address:</label>
-                    <input type="email" name="email">
+                    <input type="email" name="email" aria-describedby="required-description">
+                    <span aria-hidden="true" class="required">*</span>
                 </p><br>
                 <p><label for="phnno">My Telephone Number:</label>
                     <input type="text" name="phnno">
                 </p><br>
                 <p><label for="orgname">My Organization Name:</label>
-                    <input type="text" name="orgname">
+                    <input type="text" name="orgname" aria-describedby="required-description">
+                    <span aria-hidden="true" class="required">*</span>
                 </p><br>
                 <p><label for="city">My City:</label>
                     <input type="text" name="city">
                 </p><br>
                 <p><label for="state">My state or Province:</label>
-                    <select name="state">
-                        <option value="Select State or Province">Select State or Province</option>
+                    <select name="state" id="state" onchange="promo()">
+                        <option value="">Select State or Province</option>
                         <option value="Telangana">Telangana</option>
                         <option value="Andhra Pradesh">Andhra Pradesh</option>
                         <option value="Tamil Nadu">Tamil Nadu</option>
@@ -58,7 +62,7 @@
                     <input type="radio" name="contact">Both<br>
                 </p><br>
                 <p><label for="code">Promotion Code:</label>
-                    <input type="text" name="code">
+                    <input type="text" name="code" id="promocode" readonly>
                 </p><br>
                 <p><label>Operational Information</label></p><br>
                 <p>This information is optional but it help us to serve you better.</p><br>
@@ -71,8 +75,8 @@
                 <p><label for="know">What I'd really like to know is:</label></p>
                 <p><textarea class="scroll-box" name="know" ></textarea></p><br>
                 <p>
-                    <input class="send-button" type="button" value="Send Message">&nbsp;
-                    <input class="clear-button" type="button" value="Clear Form">
+                    <button class="send-button" type="submit">Send Message</button>&nbsp;
+                    <button class="clear-button" onclick= "clearForm();">Clear Form</button>
                 </p><br>
             </form>
         </div>
