@@ -71,6 +71,7 @@ document.getElementById("submit").addEventListener("click", (e)=>{
   if (name && email && orgname){
     alert("Successfully submitted");
     document.getElementById("details").reset();
+    document.getElementById("update").innerHTML="";
   }
   else{
     document.getElementById("update").innerHTML="Please fill all the required fileds below";

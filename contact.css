@@ -78,9 +78,16 @@ body{
 form{
     display: table;
     margin: 40px 0px 0px 40px;
+    width:900px;
 }
-p{
+.item{
     display: table-row;
+    text-align: left;
+}
+.cell{
+    display: table-cell;
+    padding: 16px;
+    width:400px;
 }
 label{
     display: table-cell;
@@ -88,7 +95,7 @@ label{
     font-family: "Arial";
     color: #1B1B1B;
     font-size: 15px;
-    width:200px;
+    width:300px;
 }
 input,button{
     display: table-cell;
@@ -106,7 +113,7 @@ select{
 }
 .scroll-box{
     height:100px;
-    width:400px;
+    width:300px;
     font-family: Arial;
     font-size: 82%;
     overflow:scroll;

@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Technovert Mockup</title>
-        <link rel="stylesheet" href="careers.css"> 
+        <title>Careers</title>
+        <link rel="stylesheet" href="careers.css">
+        <script src="careers.js" defer></script>
     </head>
     <body>
         <div class="heading">
@@ -26,18 +27,34 @@
             <div class="content">We are looking for smart people who love fiddling with code and pour their heart into it.
                 If you are one, we would like to talk to you. Please fill the form and below we will get back to you.
             </div>
-            <form>
-                <p><label for="name">Name</label>
-                <input type="text" name="name"></p><br>
-                <p><label for="email">Email</label>
-                <input type="email" name="email"></p><br>
-                <p><label for="role">Desired role</label>
-                <input type="text" name="role"></p><br>
-                <p><label for="upload">Upload Resume</label>
-                <input type="text" name="upload"> &nbsp;
-                <input type="button" class="browse" value="Browse.."></p><br>
-                <p><label for="submit"></label>
-                <input type="submit" class="submit" value="Submit"></p><br>
+            <div id="update"></div>
+            <form id="details">
+                <div class="item">
+                    <div class="cell"><label for="name">Name</label></div>
+                    <div class="cell"><input type="text" id="name" name="name" aria-describedby="required-description">
+                    <span aria-hidden="true" class="required">*</span>&nbsp;
+                    <span id="nameError"></span></div>
+                </div>
+                <div class="item">
+                    <div class="cell"><label for="email">Email</label></div>
+                    <div class="cell"><input type="email" id="email" name="email" aria-describedby="required-description">
+                    <span aria-hidden="true" class="required">*</span>&nbsp;
+                    <span id="emailError"></span></div>
+                </div>
+                <div class="item">
+                    <div class="cell"><label for="role">Desired role</label></div>
+                    <div class="cell"><input type="text" name="role"></div>
+                </div>
+                <div class="item">
+                    <div class="cell"><label for="upload">Upload Resume</label></div>
+                    <div class="cell file"><input type="text" name="upload">
+                        <span> <input type="file" class="file" value="Browse" /></span>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="cell"><label for="submit"></label></div>
+                    <div class="cell"><input type="submit" id="submit" class="submit" value="Submit"></div>
+                </div>
             </form>
         </div>
     </body>
