@@ -63,3 +63,29 @@ body{
 .active-page b{
     color:#3A3631;
 }
+.body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+form{
+    display: table;
+    margin: 40px 0px 0px 40px;
+}
+p{
+    display: table-row;
+}
+label{
+    display: table-cell;
+    font-weight: bold;
+    font-family: "Arial";
+    color: #1B1B1B;
+    font-size: 15px;
+    width:200px;
+}
+input{
+    display: table-cell;
+    padding: 5px;
+    border-color:#9F9F9F;
+    border-style: inset;
+}
