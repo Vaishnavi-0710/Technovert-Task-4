@@ -1,6 +1,5 @@
 body{
     margin:0;
-    width:100%;
 }
 .heading{
     background-color: #3399cc;
@@ -64,47 +63,52 @@ body{
     color:#3A3631;
 }
 .body{
-    padding: 30px 0px 0px 55px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
-.news{
-    border-style: solid;
-    border-width: 1px;
-    border-color: #C0C0C0;
-    width: 710px;
-    padding: 10px;
-}
-.sub-header{
-    font-family: 'calibri';
-    font-size: 150%;
+.career-heading{
+    font-family: "Century Gothic";
+    color: #323232;
     font-weight: 500;
-    margin: 0;
+    font-size: 30px;
+    margin: 20px 0px 20px 55px;
 }
-.news-headlines{
-    font-family: 'Calibri';
-    font-size: 96%;
-    font-weight: 500;
-    color: #333333;
-    list-style-type: none;
-    padding:0;
-    margin:0;
-    text-shadow: 0.3px 0.5px grey;
+.content{
+    font-family: "Arial";
+    color: #303030;
+    font-size: 16px;
+    font-weight: 100%;
+    width:1000px;
+    margin: 0px 0px 10px 60px;
 }
-.news-headlines > li{
-    margin-bottom: 15px;
+form{
+    display: table;
+    margin: 40px 0px 0px 80px;
 }
-.news-headlines > li::before{
-    content: "-";
-    margin-left: 6px;
-    margin-right: 10px;
+p{
+    display: table-row;
 }
-.welcome{
-    margin: 33px 0px 20px 0px;
-    width:1040px;
+label{
+    display: table-cell;
+    font-weight: bold;
+    font-family: "Arial";
+    color: #1B1B1B;
+    font-size: 15px;
+    width:150px;
 }
-.welcome > div{
-    font-family: 'Calibri';
-    color: #333333;
-    font-size: 96%;
-    margin: 4px 0px 0px 0px;
-    text-shadow: 0.3px 0.5px grey;
+input{
+    display: table-cell;
+    padding: 5px;
+    border: 1.5px solid #9F9F9F;
+}
+.browse{
+    font-weight: bold;
+    font-family: "Arial";
+    color: #1B1B1B;
+}
+.submit{
+    font-weight: bold;
+    font-family: "Arial";
+    color: #1B1B1B;
 }
