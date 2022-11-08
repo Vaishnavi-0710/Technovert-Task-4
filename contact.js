@@ -1,6 +1,6 @@
 function clearForm(){
-  var element=document.getElementsByTagName("input");
-  for(var i= 0;i<element.length;i++){
+  let element=document.getElementsByTagName("input");
+  for(let i= 0;i<element.length;i++){
     element[i].value="";
   }
 }
@@ -12,4 +12,7 @@ function promo(){
   else{
     document.getElementById("promocode").value="";
   }
+}
+function genderAlert(msg){
+  alert("Hello "+ msg)
 }
