@@ -102,12 +102,7 @@ input{
     padding: 5px;
     border: 1.5px solid #9F9F9F;
 }
-.browse{
-    font-weight: bold;
-    font-family: "Arial";
-    color: #1B1B1B;
-}
-.submit{
+.browse, .submit{
     font-weight: bold;
     font-family: "Arial";
     color: #1B1B1B;
