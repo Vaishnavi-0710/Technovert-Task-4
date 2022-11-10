@@ -74,6 +74,6 @@ document.getElementById("submit").addEventListener("click", (e)=>{
     document.getElementById("update").innerHTML="";
   }
   else{
-    document.getElementById("update").innerHTML="Please fill all the required fileds below";
+    document.getElementById("update").innerHTML="Please fill all the required fields below";
   }
 });
